@@ -1,10 +1,10 @@
 {
-    "fornecedores":[
-        {
-            "id": 1,
-            "nome": "URBANO LTDA",
-            "cnpj": "12.765.094/0001-79",
-            "email": "sac@urbano.com.br"
-        }
-    ]
+  "fornecedores": [
+    {
+      "id": 1,
+      "nome": "URBANO LTDA",
+      "cnpj": "12.765.094/0001-79",
+      "email": "sac@urbano.com.br"
+    }
+  ]
 }
