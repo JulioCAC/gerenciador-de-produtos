@@ -94,7 +94,7 @@ const FornecedorList = () => {
         <Modal isOpen={modalAberto} onRequestClose={fecharModal} className="modal" overlayClassName="overlay">
                 <div className="modalContent">
                     <FaExclamationTriangle className="icon"/>
-                    <h2>Confirmar Exvlusão</h2>
+                    <h2>Confirmar Exclusão</h2>
                     <p>Tem certeza que deseja excluir o fornecedor {fornecedorSelecionado && fornecedorSelecionado.nome}?</p>
                     <div className="modalButtons">
                         <button onClick={fecharModal} className="btn btn-secondary">Cancelar</button>

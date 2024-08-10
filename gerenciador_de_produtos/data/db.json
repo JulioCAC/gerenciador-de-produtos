@@ -5,6 +5,39 @@
       "nome": "URBANO LTDA",
       "cnpj": "12.765.094/0001-79",
       "email": "sac@urbano.com.br"
+    },
+    {
+      "nome": "bjk",
+      "cnpj": "11.111.111/1111-11",
+      "email": "aaaa@aa.com",
+      "id": 5
+    },
+    {
+      "nome": "bjk",
+      "cnpj": "11.111.111/1111-11",
+      "email": "ss@ss.co",
+      "id": 6
+    },
+    {
+      "nome": "aaaaa",
+      "cnpj": "11.111.111/1111-11",
+      "email": "juliocac999@gmail.com",
+      "id": 8
+    },
+    {
+      "nome": "aaaaa",
+      "cnpj": "11.111.111/1111-11",
+      "email": "ss@ss.co",
+      "id": 9
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "iphone",
+      "preco": "7000",
+      "descricao": "iphone bolado",
+      "quantidadeEstoque": "22"
     }
   ]
 }
