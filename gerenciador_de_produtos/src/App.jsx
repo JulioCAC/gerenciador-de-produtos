@@ -22,7 +22,6 @@ const App = () => {
         <Route path="/add-produtos" element={<ProdutoForm />} />
         <Route path="edit-produtos/:id" element={<ProdutoForm/>}/>
       </Routes>
-      
     </div>
       
     </BrowserRouter>
