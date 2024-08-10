@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../../api'
 import { Link } from 'react-router-dom'
-import { FaPlus, FaEdit, FaTrash, FaExclamationTriangle, FaCheckCircle } from 'react-icons/fa';
+import { FaPlus, FaEdit, FaTrash, FaExclamationTriangle, FaCheckCircle, FaQuestionCircle } from 'react-icons/fa';
 import Modal from 'react-modal';
 
 
@@ -11,6 +11,7 @@ const FornecedorList = () => {
     const [fornecedorSelecionado, setFornecedorSelecionado] = useState(null)
     const [modalAberto, setModalAberto] = useState(false)
     const [modalSucesso, setModalSucesso] = useState(false)
+    const [tooltipAberto, setTooltipAberto] = useState(false)
 
 
     useEffect(() => {
@@ -42,12 +43,25 @@ const FornecedorList = () => {
             })
     }
 
+    const toggleTooltip = () => {
+        setTooltipAberto(!tooltipAberto)
+
+    }
+
   return (
     <div className="container mt-5">
-        <h2 className="mb-4">Lista de Fornecedores</h2>
+        <h2 className="mb-4" style={{ position: 'relative' }}>Lista de Fornecedores 
+            <FaQuestionCircle className="tooltip-icon" onClick={toggleTooltip}/>
+            {tooltipAberto && (
+                <div className="tooltip">
+                    Aqui você pode ver, editar ou excluir fornecedores cadastrados no sistema.
+                </div>
+            )}
+        </h2>
         <Link to={"/add-fornecedores"} className="btn btn-primary mb-2">
             <FaPlus className="icon"/> Adicionar Fornecedor
         </Link>
+    
         <table className="table">
             <thead>
                 <tr>
