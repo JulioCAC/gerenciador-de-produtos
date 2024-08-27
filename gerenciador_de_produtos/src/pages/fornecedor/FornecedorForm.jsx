@@ -59,7 +59,7 @@ const FornecedorForm = () => {
     setFornecedor({ nome: "", cnpj: "", email: "" });
   };
   return (
-    <div className="form-conteiner">
+    <div className="form-container">
       <h2 style={{ position: "relative" }}>
         {id ? "Editar Fornecedor" : "Adicionar Fornecedor"}
         <FaQuestionCircle className="tooltip-icon" onClick={toggleTooltip} />

@@ -7,6 +7,7 @@ import FornecedorForm from './pages/fornecedor/FornecedorForm'
 import ProdutoList from './pages/produto/ProdutoList'
 import ProdutoForm from './pages/produto/ProdutoForm'
 import Inicio from './pages/Inicio'
+import ClienteForm from './pages/cliente/ClienteForm'
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/listar-produtos" element={<ProdutoList />} />
         <Route path="/add-produtos" element={<ProdutoForm />} />
         <Route path="edit-produtos/:id" element={<ProdutoForm/>}/>
+        <Route path="/add-clientes" element={<ClienteForm/>}/>
       </Routes>
     </div>
       
