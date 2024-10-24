@@ -49,11 +49,9 @@ const FornecedorList = () => {
             abrirModalSucesso();
         } catch (error) {
             if (error.response && error.response.status === 409) {
-                // Trata erro de fornecedor relacionado a produtos
                 setMensagemErro('Não é possível excluir este fornecedor porque ele está relacionado a outros produtos.');
                 setModalErro(true);
             } else {
-                console.error("Erro ao excluir fornecedor:", error);
                 setMensagemErro('Ocorreu um erro ao tentar excluir o fornecedor. Tente novamente mais tarde.');
                 setModalErro(true);
             }
@@ -85,6 +83,7 @@ const FornecedorList = () => {
                         <th>Nome:</th>
                         <th>CNPJ:</th>
                         <th>Email:</th>
+                        <th>Tipo:</th>
                         <th>Ações:</th>
                     </tr>
                 </thead>
@@ -95,6 +94,7 @@ const FornecedorList = () => {
                                 <td>{fornecedor.nome}</td>
                                 <td>{fornecedor.cnpj}</td>
                                 <td>{fornecedor.email}</td>
+                                <td>{fornecedor.tipoFornecedor}</td>
                                 <td>
                                     <Link to={`/edit-fornecedores/${fornecedor.id}`} className="btn btn-sm btn-warning">
                                         <FaEdit className="icon icon-btn"/> Editar
